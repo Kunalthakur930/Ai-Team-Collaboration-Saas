@@ -1,79 +1,74 @@
-# FlowSync AI Team Colloboration Saas🚀
+# FlowSync – Team Collaboration SaaS
 
-AI-Powered Team Collaboration SaaS built using MERN Stack.
+FlowSync is a team collaboration platform built with Node.js, Express.js, and MongoDB. The goal of this project is to help teams organize their work, manage tasks, collaborate in shared workspaces, and track progress in real time.
 
-## 📌 Overview
+This project was developed to practice backend system design concepts such as authentication, role-based access control, real-time communication, file handling, notifications, and scalable API development.
 
-FlowSync AI is a full-stack team collaboration and productivity platform where teams can:
+## Features
 
-- Create workspaces
-- Manage tasks
-- Assign tasks to members
-- Track progress
-- View analytics
-- Collaborate securely
-- Monitor activity history
+### Authentication
 
-This project is being built as a scalable SaaS architecture project focused on real-world backend engineering concepts.
+* User Registration and Login
+* JWT-based Authentication
+* Protected Routes
+* Forgot Password via Email
+* Reset Password Functionality
 
----
+### Workspace Management
 
-# 🔥 Features
+* Create and Manage Workspaces
+* Invite Team Members
+* Role-Based Access Control (Owner, Admin, Member)
+* Member Promotion and Management
 
-## Authentication & Security
+### Task Management
 
-- User Registration
-- User Login
-- JWT Authentication
-- Protected Routes
-- Authorization System
+* Create, Update, and Delete Tasks
+* Assign Tasks to Team Members
+* Track Task Status
+* Personal Task Dashboard
+* Search and Filter Tasks
+* Pagination Support
 
-## Workspace System
+### Collaboration
 
-- Create Workspace
-- Invite Members
-- Workspace Access Control
-- Workspace Member Management
+* Task Comments
+* Activity Tracking
+* File Attachments
+* Real-Time Notifications using Socket.io
 
-## Task Management
+### Notifications
 
-- Create Tasks
-- Update Task Status
-- Delete Tasks
-- Assign Tasks to Members
-- Get Personal Assigned Tasks
+* Database-Persisted Notifications
+* Mark Notifications as Read
+* Unread Notification Count
+* Real-Time Task Assignment Alerts
 
-## Analytics
+### Analytics
 
-- Workspace Task Analytics
-- Productivity Metrics
+* Workspace Task Analytics
+* Task Status Overview
 
-## Activity Tracking
+## Tech Stack
 
-- Workspace Activity History
-- Audit Logging System
+### Backend
 
----
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* Socket.io
+* JWT Authentication
+* Nodemailer
+* Multer
 
-# 🛠️ Tech Stack
+### Tools
 
-## Backend
+* Postman
+* Git & GitHub
+* MongoDB Atlas
 
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- JWT Authentication
-
-## Tools
-
-- Postman
-- Git & GitHub
-- MongoDB Atlas
-
----
-
-# 📂 Project Structure
+## Project Structure
 
 backend/
 │
@@ -82,18 +77,31 @@ backend/
 │ ├── models/
 │ ├── routes/
 │ ├── middlewares/
+│ ├── uploads/
 │ └── config/
 │
-├── .env
 ├── package.json
+├── .env
 └── server.js
 
----
+## Installation
 
-# ⚙️ Installation
+Clone the repository:
 
-## Clone Repository
-
-```bash
 git clone https://github.com/Kunalthakur930/Ai-Team-Collaboration-Saas.git
-```
+
+Install dependencies:
+
+npm install
+
+Run the server:
+
+npm run dev
+
+## Future Improvements
+
+* React Frontend
+* Dashboard UI
+* Deployment
+* AI-Based Productivity Insights
+* Team Performance Reports
