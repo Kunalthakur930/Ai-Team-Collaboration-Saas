@@ -15,9 +15,28 @@ const workspaceSchema = new mongoose.Schema(
     },
     members: [
       {
-        type: mongoose.Schema.Types.ObjectId,
-
-        ref: "User",
+        user: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "User",
+        },
+        role: {
+          type: String,
+          enum: ["Owner", "Admin", "Member"],
+          default: "Member",
+        },
+      },
+    ],
+    joinRequests: [
+      {
+        user: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "User",
+        },
+        status: {
+          type: String,
+          enum: ["Pending", "Approved", "Rejected"],
+          default: "Pending",
+        },
       },
     ],
   },
